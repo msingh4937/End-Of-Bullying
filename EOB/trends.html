@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trending</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: rgba(114, 253, 225, 0.6)
+		}
+		h2{
+			margin-left: 15%;
+			margin-right: 15%;
+			text-align: center;
+			font-size: 40pt;
+			font-family: cursive;
+		}
+		hr{
+			margin-left: 15%;
+			margin-right: 15%;
+			border-width: 3px;
+			border-color: purple
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+		footer{
+			width: 100%;
+			position: absolute;
+
+		}
+		#footerpic{
+			width: 100%;
+			margin: 0;
+			position: absolute;
+
+
+		}
+		#gmail{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 16%
+		}
+
+		#footertext{
+			position: absolute;
+			color: white;
+			font-size: 60px;
+			margin-left: 40%;
+			font-family: courier;
+		}
+		#snapchat{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 26%
+		}
+		#instagram{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 36%
+		}
+		#youtube{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 46%
+		}
+		#facebook{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 56%
+		}
+		#twitter{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 66%
+		}
+		#googleplus{
+			position: absolute;
+			width: 97px;
+			height: 97px;
+			margin-top: 7.4%;
+			margin-left: 76%
+		}
+
+		#gmail:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#snapchat:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#instagram:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#youtube:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#facebook:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#twitter:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#googleplus:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#p1{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#p2{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p3{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p4{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p5{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p6{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p7{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+		#p8{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+	#list1{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+
+		}
+		#list2{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+			
+		}
+		#list3{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+			
+		}
+		#list4{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+
+		<h1 id="title"> Trending </h1>
+		<img id="logo" src="logo.png">
+		<img id="headerpic" src="header.jpg">
+	</header>
+		<h2>Youth bullying trends in the United States: Research and data</h2><hr>
+		<p id="p1">By Justin Feldman</p>
+		<p id="p2">Youth bullying has become a high-visibility issue of concern for school districts and public officials in recent years. A majority of states now have anti-bullying laws on the books and the White House launched its first anti-bullying campaign in 2011. Many school districts across the United States have adopted bullying prevention programs, which can reduce the prevalence of bullying by an average of 20% according to one research meta-analysis.</p>
+		<p id="p3">To better understand youth bullying and its consequences, several studies have assessed the effects of involvement in bullying on various short-term and long-term outcomes relating to health and well-being. A number of studies have also examined the degree to which socioeconomic status, body weight and other factors may affect an adolescent's risk of becoming a victim or perpetrator of bullying.</p>
+		<p id="p4">A 2014 study published in the American Journal of Public Health looks at trends in bullying, physical fighting, and weapon carrying for students at U.S. schools in grades 6 through 10 over the period 1998 to 2010. The researchers - Jessamyn G. Perlus, Ashley Brooks-Russell and Ronald J. Iannotti of the National Institutes of Health and Jing Wang of the Henry M. Jackson Foundation for the Advancement of Military Medicine - defined bullying as including hurtful taunting, intentional exclusion from social activities, verbal or physical aggression, spreading false rumors and sexual harassment. According to their definition, "[It] is not bullying when two students of about the same strength or power argue or fight. It is also not bullying when a student is teased in a friendly and playful way."" Additionally, the researchers assessed how often students became involved in physical fights regardless of whether the altercations met their definition of bullying.</p>
+		<p id="p5">The study, "Trends in Bullying, Physical Fighting, and Weapon Carrying Among 6th- Through 10th-Grade Students From 1998 to 2010: Findings From a National Study,"" offers the first nationally representative analysis of changes in bullying over time. The researchers based their study on data from Health Behavior in School-Aged Children, a survey of adolescents conducted every four years and coordinated by the World Health Organization.</p>
+		<p id="p6">The study's findings include:</p>
+		<ul>
+			<li id="list1">There was a steady decrease in the proportion of students who reported they were bullied at least twice per month, from 13.7% in 1998 to 10.2% in 2010.</li>
+			<li id="list2">Physical fighting decreased between the years 1998, when 23.4% of students reported fighting, and 2006, when 18.4% reported fighting. There was no change between 2006 and 2010.</li>
+			<li id="list3">There was an increase in the proportion of white students who reported carrying weapons to school: 10.7% carried weapons in 1998 and 15.5% did in 2012. Weapon carrying did not change among students from other racial and ethnic groups.</li>
+			<li id="list4">Among students who reported carrying weapons, knives were the most common, accounting for 58.0% of all weapons. Guns were the second most common and accounted for 20.5% of weapons.</li>
+		</ul>
+		<p id="p7">Overall, the study found consistent decreases in school bullying and fighting between the years 1998 and 2010, but an increase in adolescents who reported carrying a weapon to school.</p>
+		<p id="p8"><strong>Related research:</strong> Results from a study on the same theme were presented at the annual Pediatric Academic Societies meeting in 2014. That study found victims of bullying were more likely to carry weapons to school than their peers. It also estimated that 200,000 bullying victims in the United States bring weapons into their high schools each month. </p>
+
+
+		<footer>
+		<img src="footer.jpg" id="footerpic">
+		<h2 id="footertext"> Contact us...</h2>
+		<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ypatel9559@baysidehighschool.org&tf=1"><img src="gmail.png" id="gmail"></a>
+		<a href="C:\Users\r\Desktop\EOB\snapcode.svg"><img src="snapchat.png" id="snapchat"></a>
+		<img src="instagram.png" id="instagram">
+		<img src="youtube.png" id="youtube">
+		<img src="facebook.png" id="facebook">
+		<img src="twitter.png" id="twitter">
+		<img src="googleplus.png" id="googleplus">
+
+	</footer>
+
+</body>
+</html>

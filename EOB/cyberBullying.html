@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EOB</title>
+	<style type="text/css">
+		body{
+			margin: 0
+			background-color: rgba(109, 203, 98, 0.6);
+		}
+		
+		#div2{
+			color:rgb(4,188,246);
+			margin-top: 50px;
+			font-size: 35px;
+			margin-left: 10px;
+			width: 100%;
+	
+		}	
+		#div3{
+			width: 99%;
+			height: 300px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div4{
+			color: rgb(4,188,246);
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+
+		#div5{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+
+		}
+		#div6{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div7{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div8{
+			width: 99%;
+			height: 40px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div9{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div10{
+			width: 99%;
+			height: 50px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div11{
+			width: 100%;
+			height: 90px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div12{
+			width: 99%;
+			margin-top: 100px;
+			color: rgb(4,188,246);
+			margin-left: 10px;
+			font-size: 35px;
+			
+
+		}
+		#div13{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div14{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			
+		}
+		#div15{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+			
+		}
+		#div16{
+			width: 99%;
+			height: 50px;
+			margin-top: 50px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div17{
+			width: 99%;
+			height: 10px;
+			color: rgb(4,188,246);
+			margin-left: 10px;
+			font-size: 35px;
+		
+
+		}
+		#div18{
+			width: 99%;
+			height: 50px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div19{
+			width: 99%;
+			height: 70px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div20{
+			width: 99%;
+			height: 100px;
+			font-size: 35px;
+		
+		}
+		#div21{
+			width: 99%;
+			height: 50px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+		#div22{
+			width: 99%;
+			height: 10px;
+			margin-left: 10px;
+			font-size: 35px;
+		
+		}
+
+		#yoyo{
+			font-size: 25px;
+			margin-left: 10px;
+
+	
+		}
+
+		#p2{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}
+		#p3{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+		#p4{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+
+		#p5{
+			font-size: 25px;
+			margin-left: 10px;
+			
+		}	
+		#p6{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+		#p7{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+		#p8{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+		#p9{
+			font-size: 25px;
+			margin-left: 10px;
+	
+		}	
+		#p10{
+			font-size: 35px;
+			margin-left: 10px;
+		
+		}	
+		#p11{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}	
+		#p12{
+			font-size: 25px;
+			margin-left: 10px;
+	
+		}
+		#p13{
+			font-size: 25px;
+			margin-left: 10px;
+
+		}
+		#p14{
+			font-size: 25px;
+			margin-left: 10px;
+	
+		}
+		#p15{
+			font-size: 35px;
+			margin-left: 10px;
+			
+
+
+		}
+		#p16{
+			font-size: 25px;
+			margin-left: 10px;
+			margin-top: 50px;
+			
+		}
+		#p17{
+			font-size: 25px;
+			margin-left: 10px;
+			
+		}
+		#p18{
+			font-size: 25px;
+			margin-left: 15px;
+	
+		}
+		#p19{
+			font-size: 25px;
+			margin-left: 10px;
+		
+		}
+		#p20{
+			font-size: 25px;
+			margin-left: 10px;
+	
+		}
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+
+		#p3:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		#p4:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		#p5:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		#p6:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		#p7:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		#p8:hover{
+			transition: 2s;
+			font-size: 30px
+		}
+		.para{
+			background: url("wallpaper3.jpg") 100% fixed ;
+		}
+		.parainner{
+			padding: 450px
+		}
+
+		footer{
+			width: 100%;
+			position: absolute;
+
+		
+
+		}
+		#footerpic{
+			width: 100%;
+			margin: 0;
+			position: absolute;
+
+
+		}
+		#gmail{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 16%
+		}
+
+		#footertext{
+			position: absolute;
+			color: white;
+			font-size: 60px;
+			margin-left: 40%;
+			font-family: courier;
+		}
+		#snapchat{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 26%
+		}
+		#instagram{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 36%
+		}
+		#youtube{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 46%
+		}
+		#facebook{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 56%
+		}
+		#twitter{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 66%
+		}
+		#googleplus{
+			position: absolute;
+			width: 97px;
+			height: 97px;
+			margin-top: 7.4%;
+			margin-left: 76%
+		}
+
+		#gmail:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#snapchat:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#instagram:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#youtube:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#facebook:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#twitter:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#googleplus:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+
+		hr{
+			border-width: 5px;
+			border-color: green;
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+		
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="verbalBullying.html">Verbal bullying</a>
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+
+		<h1 id="title"> Cyber Bullying </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+	</header>
+			<div id="div2">
+			<P>What is Cyber Bullying?</P><hr>
+
+	    </div>
+
+	    <div id="div3">
+	    
+	    	<p id="yoyo">
+	    	Cyberbullying is using technological means to 
+	    	intimidate and spread rumors, harass, threaten, or
+	    	 otherwise use digital media to abuse someone mentally,
+	    	 emotionally. Cyberbullying has the potential to cause
+	    	  intense harm to others because it can happen 
+	    	  anytime, be carried around with a person anywhere,
+	    	 and spread quickly in ways that can never be undone
+	    	  beacuse you dont know the other person is.
+	    	  </p>
+
+	    	  <p id="p2">
+
+
+	    	An element of cyberbullying that is of particular
+	    	concern is that sometimes children, youth, or adults 
+	    	don't realize that they are cyberbullying either
+	    	because of ignorance about online etiquette or because
+	    	digital interactions often don't have the benefit of
+	    	the kind of nonverbal communication that happens in
+	    	face-to-face communication. Also, the ability to be
+	    	anonymous online or hide behind a digital medium
+	    	can also too often leave people saying or doing
+	    	things through digital means that they wouldn't
+	    	do face-to-face.
+	    	</p>
+
+	    </div>
+
+	    <div id="div4">
+	    	<p>What are some ways kids bully online?</p><hr>
+		</div>
+
+		<div id="div5">
+			<p id="p3">
+
+				1) Sending someone mean or threatening emails,
+				 instant messages, or text messages.
+		</div>
+
+		<div id="div6">
+			<p id="p4">
+
+				2) Excluding someone from an instant messenger 
+				buddy list or blocking their email for no reason.
+			</p>
+		</div>
+
+		<div id="div7">
+			<p id="p5">
+		
+				3) Tricking someone into revealing personal or
+				 embarrassing information and sending it to others.
+			</p>
+		</div>
+		<div id="div8">
+			<p id="p6">
+				4) Breaking into someone's email or instant message
+				 account to send cruel or untrue messages while
+				 posing as that person.
+			</p>
+		</div>
+		<div id="div9">
+			<p id="p7">
+				5)Creating websites to make fun of another person 
+				such as a classmate or teacher.
+			</p>
+		</div>
+		<div id="div10">
+			<p id="p8">
+				6)Using websites to rate peers as prettiest,
+				 ugliest, etc.
+			</p>
+		</div>
+		<div id="div11">
+
+			<p id="p9">
+				Both boys and girls can bully online. Boys more
+				commonly bully by sending messages of a sexual
+				nature or by threatening to fight or hurt
+				someone. Girls more often bully by spreading
+				rumors and by sending messages that make fun of
+				someone or exclude others.  They also tell
+				secrets.
+			</p>
+		</div>
+
+
+		<section class="para">
+		<div class="parainner">
+		</div>
+		</section>
+
+
+
+		<div id="div12">
+			<p id="p10">Cyber Bullying Effects</p><hr>
+		</div>
+
+		<div id="div13">
+			<p id="p11">
+				StopBullying.gov reports that youth who are bullied
+				 have a higher risk of depression and anxiety.
+			</p>
+		</div>
+
+		<div id="div14">
+			<p id="p12">
+				Youth who are bullied are more likely to struggle
+				 personally and at school.
+			</p>
+		</div>
+
+		<div id="div15">
+			<p id="p13">
+				Bullying can lead to thoughts about suicide,
+				sometimes persisting into adulthood. In one study,
+				adults who were bullied as youth were three times
+				more likely to have suicidal thoughts or
+				inclinations.
+			</p>
+		</div>
+
+		<div id="div16">
+			<p id="p14">
+				Youth who are bullied may retaliate through violent
+				 measures. In 12 of 15 school shooting cases in the 
+				 1990s, the shooters had a history of being bullied.
+			</p>
+		</div>
+
+		<div id="div17">
+			<p id="p15">Ways to stop Cyber Bullying:</p>
+		</div>
+
+		<div id="div18">
+			<p id="p16">
+				1) Don't respond. If someone bullies you, remember
+				that your reaction is usually exactly what the
+				bully wants. It gives him or her power over you.
+			</p>
+		</div>
+
+		<div id="div19">
+			<p id="p17">
+				2) Talk to a trusted adult. You deserve backup. It's
+				always good to involve a parent but if you can't a school counselor usually knows how to help.
+				Sometimes both are needed. If you're really
+				nervous about saying something, see if there's
+				a way to report the incident anonymously at
+				school.
+			</p>
+		</div>
+
+		<div id="div20">
+			<p id="p18">
+				3) Be a friend, not a bystander. Watching or
+				forwarding mean messages empowers bullies and
+				hurts victims even more. If you can, tell bullies
+				to stop or let them know harassment makes people
+				look stupid and mean. It's time to let bullies
+				know their behavior is unacceptable cruel
+				abuse of fellow human beings. If you can't
+				stop the bully, at least try to help the
+				victim and report the behavior.
+			</p>
+		</div>
+
+		<div id="div21">
+			<p id="p19">
+				4) Block the bully. If the harassment's coming in the
+				form of instant messages, texts, or profile
+				comments, do yourself a favor: Use preferences or
+				privacy tools to block the person. If it's in 
+				chat, leave the "room".
+			</p>
+		</div>
+
+		<div id="div22">
+			<p id="p20">
+				5) Save the evidence. The only good news about
+				digital
+				bullying is that the harassing messages can
+				usually be captured, saved, and shown to someone
+				who can help. You need to do this even if it's
+				minor stuff, in case things escalate.
+			</p>
+		</div>
+
+
+	<footer>
+		<img src="footer.jpg" id="footerpic">
+		<h2 id="footertext"> Contact us...</h2>
+		<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ypatel9559@baysidehighschool.org&tf=1"><img src="gmail.png" id="gmail"></a>
+		<a href="C:\Users\r\Desktop\EOB\snapcode.svg"><img src="snapchat.png" id="snapchat"></a>
+		<img src="instagram.png" id="instagram">
+		<img src="youtube.png" id="youtube">
+		<img src="facebook.png" id="facebook">
+		<img src="twitter.png" id="twitter">
+		<img src="googleplus.png" id="googleplus">
+
+	</footer>
+
+
+
+</body>
+</html>

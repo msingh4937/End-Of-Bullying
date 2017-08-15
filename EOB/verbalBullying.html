@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VerbalBullying</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: rgba(202, 47, 58, 0.37)
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+		#p1{
+			font-size:25px;
+			margin-left: 10px;
+			}
+		#p2{
+			font-size:25px;
+			margin-left: 10px;
+			}
+		#p3{
+			font-size:25px;
+			margin-left: 10px;
+			}
+		#div1{
+			font-size:25px;
+			margin-left: 10px;
+			width: 100%;
+			height: 60px
+		}
+		#p5	{
+			font-size:25px;
+			margin-left: 10px;
+			}
+		#topic1{
+			font-size:35px;
+			margin-left: 10px;
+			color:steelblue;
+
+		}
+		#topic2{
+			font-size:35px;
+			margin-left: 20px;
+			color:steelblue;
+		}
+		#topic3{
+			font-size:35px;
+			margin-left: 20px;
+			color:steelblue;
+		}
+		#topic4{
+			font-size:35px;
+			margin-left: 20px;
+			color:steelblue;
+		}
+		#topic5{
+			font-size:35px;
+			margin-left: 20px;
+			color:steelblue;
+		}
+		#topic6{
+			font-size:35px;
+			color:steelblue;
+		}
+		#list1:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list2:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list3:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list4:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list5:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list6:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list7:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list8:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list9:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list10:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		#list11:hover{
+			transition:2s;
+			font-size:30px;
+		}
+		.para{
+			background: url("wallpaper.jpg")  100% fixed ;
+		}
+		.parainner{
+			padding: 400px
+		}
+
+		hr{
+			border-width: 5px;
+			border-color: purple;
+
+		}
+		footer{
+			width: 100%;
+			position: absolute;
+		
+
+		}
+		#footerpic{
+			width: 100%;
+			margin: 0;
+			position: absolute;
+
+
+		}
+		#gmail{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 16%
+		}
+
+		#footertext{
+			position: absolute;
+			color: white;
+			font-size: 60px;
+			margin-left: 40%;
+			font-family: courier;
+		}
+		#snapchat{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 26%
+		}
+		#instagram{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 36%
+		}
+		#youtube{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 46%
+		}
+		#facebook{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 56%
+		}
+		#twitter{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 66%
+		}
+		#googleplus{
+			position: absolute;
+			width: 97px;
+			height: 97px;
+			margin-top: 7.4%;
+			margin-left: 76%
+		}
+
+		#gmail:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#snapchat:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#instagram:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#youtube:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#facebook:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#twitter:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#googleplus:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberbullying.html">Cyber bullying</a>
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+
+		<h1 id="title"> Verbal Bullying </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+		</header>
+
+		
+
+
+		<h2 id="topic1">What is Verbal Bullying?</h2> <hr>
+		<div>
+			<p id="p1">Verbal Bullying,is like physical bullying. Infliciting pain. However instead of physical pain, its emotional pain. Its when people are hurt through the usage of words instead of the usage of fists.  This type of bullying is probably one of the worst and probably the most terrible type of bulyling.
+			</p>
+		</div>
+		<h2 id="topic2">What is some way people bully using verbal actions?</h2><hr>
+		<div>
+			<p id="p2">This type of Bullying is used through words more then physical interaction. Some ways people bully others using this method is, Insulting them using words(like ugly,stupid,or calling them LGBT to insult them) People also insult their friends or family(dead or alive).
+			</p>
+		</div>
+
+
+
+
+		<h2 id="topic3">Verbal Bullying Effects</h2><hr>
+		<div>
+			<ul id="p3">
+				<li id="list1">full of Distrust</li>
+				<li id="list2">Loss of Enthusiasm</li>
+				<li id="list3">Self Doubts</li>
+				<li id="list4">Depression</li>
+				<li id="list5">Feels like she is missing something important(more in social bullying)</li>
+				<li id="list6">Tends to live in future saying it will be alright</li>
+			</ul>
+		</div>
+
+
+		<section class="para">
+		<div class="parainner">
+		</div>
+		</section>
+
+
+
+		<h2 id="topic4">What type of bullying is this related to?</h2><hr>
+		<div id="div1">
+			<p id="p4">This is mostly related to Cyber Bullying and is kind of related to Social Bullying. Cyber Bullying uses words online to instult people. Social bullying uses rumors to make it so that they can't join a group activity, basically Exiling them from the social life of most. Check out our other pages for more information.</p>
+		</div>
+		<h2 id="topic5">Ways to stop Verbal Bullying.</h2><hr>
+		<div>
+			<ul id="p5">
+				<li id="list7">Report the Bullying to the Teacher or someone you trust</li>
+				<li id="list8">Make them look stupid however dont insult them too beacause that will make it look like you're a bully too</li>
+				<li id="list9">Ignore it and walk away</li>
+				<h2 id="topic6">How you can help it stop.</h2><hr>
+					<li id="list10">Go up to them and say "Stop!"</li>
+					<li id="list11">Bring a teacher to stop it for you</li>
+
+
+			</ul>
+		</div>
+	
+
+	<footer>
+		<img src="footer.jpg" id="footerpic">
+		<h2 id="footertext"> Contact us...</h2>
+		<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ypatel9559@baysidehighschool.org&tf=1"><img src="gmail.png" id="gmail"></a>
+		<a href="C:\Users\r\Desktop\EOB\snapcode.svg"><img src="snapchat.png" id="snapchat"></a>
+		<img src="instagram.png" id="instagram">
+		<img src="youtube.png" id="youtube">
+		<img src="facebook.png" id="facebook">
+		<img src="twitter.png" id="twitter">
+		<img src="googleplus.png" id="googleplus">
+
+	</footer>
+</body>
+</html>

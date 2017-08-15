@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EOB</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+		.subtopic{
+			color: rgba(119,249,236,1);
+			font-size: 35pt
+		}
+		article{
+			flex-wrap:wrap;
+			font-size:25px;
+			color:white;
+			background:url("header.jpg") 100% fixed;
+			background-repeat:no-repeat;
+			background-size:cover;
+
+		}
+		h1{
+			margin-left: 3%;
+		}
+		li{
+			margin-left: 3%;
+			color: pink
+		}
+		p{
+			margin-left: 3%;
+			color: pink
+		}
+		hr{
+			border-width: 5px;
+			border-color: lime;}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+		<h1 id="title"> Scholastic Article </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+	</header>
+	<article>
+		<p class="subtopic"><strong>Articles From Scholastics</strong></p><hr>
+		<p>Unfortunately, teasing is often part of growing up - almost every child experiences it. But it isn't always as innocuous as it seems. Words can cause pain. Teasing becomes bullying when it is repetitive or when there is a conscious intent to hurt another child. It can be verbal bullying (making threats, name-calling), psychological bullying (excluding children, spreading rumors), or physical bullying (hitting, pushing, taking a child's possessions).
+
+		<p class="subtopic"><strong>How Bullying Starts</strong></p><hr>
+
+			<p>Bullying behavior is prevalent throughout the world and it cuts across socio-economic, racial/ethnic, and cultural lines. Researchers estimate that 20 to 30 percent of school-age children are involved in bullying incidents, as either perpetrators or victims. Bullying can begin as early as preschool and intensify during transitional stages, such as starting school in 1st grade or going into middle school.</p>
+
+			<p>Victims of bullying are often shy and tend to be physically weaker than their peers. They may also have low self-esteem and poor social skills, which makes it hard for them to stand up for themselves. Bullies consider these children safe targets because they usually don't retaliate.</p>
+
+		<p class="subtopic"><strong>Effects of Bullying</strong></p><hr>
+			<p>If your child is the victim of bullying, he may suffer physically and emotionally, and his schoolwork will likely show it. Grades drop because, instead of listening to the teacher, kids are wondering what they did wrong and whether anyone will sit with them at lunch. If bullying persists, they may be afraid to go to school. Problems with low self-esteem and depression can last into adulthood and interfere with personal and professional lives.</p>
+
+			<p>Bullies are affected too, even into adulthood; they may have difficulty forming positive relationships. They are more apt to use tobacco and alcohol, and to be abusive spouses. Some studies have even found a correlation with later criminal activities.</p>
+
+		<p class="subtopic"><strong>Warning Signs</strong></p><hr>
+			<p>If you're concerned that your child is a victim of teasing or bullying, look for these signs of stress:<p>
+
+			<li>Increased passivity or withdrawal </li>
+			<li>Frequent crying </li>
+			<li>Recurrent complaints of physical symptoms such as stomach-aches or headaches with no apparent cause </li>
+			<li>Unexplained bruises </li>
+			<li>Sudden drop in grades or other learning problems</li>
+			<li>Not wanting to go to school </li>
+			<li>Significant changes in social life - suddenly no one is calling or extending invitations</li>
+			<li>Sudden change in the way your child talks - calling herself a loser, or a former friend a jerk </li></li> 
+		<p class="subtopic"><strong>How to Help:</strong></p><hr>
+			<p>First, give your child space to talk. If she recounts incidences of teasing or bullying, be empathetic. If your child has trouble verbalizing her feelings, read a story about children being teased or bullied. You can also use puppets, dolls, or stuffed animals to encourage a young child to act out problems.</p>
+
+			<p>Once you've opened the door, help your child begin to problem-solve. Role-play situations and teach your child ways to respond. You might also need to help your child find a way to move on by encouraging her to reach out and make new friends. She might join teams and school clubs to widen her circle.</p>
+		 
+		<p class="subtopic"><strong>At home and on the playground:</strong></p><hr>
+			<p>Adults need to intervene to help children resolve bullying issues, but calling another parent directly can be tricky unless he or she is a close friend. It is easy to find yourself in a "he said/she said" argument. Try to find an intermediary: even if the bullying occurs outside of school, a teacher, counselor, coach, or after-school program director may be able to help mediate a productive discussion. </p>
+
+			<p>If you do find yourself talking directly to the other parent, try to do it in person rather than over the phone. Don't begin with an angry recounting of the other child's offenses. Set the stage for a collaborative approach by suggesting going to the playground, or walking the children to school together, to observe interactions and jointly express disapproval for any unacceptable behavior.</p>
+
+		<p class="subtopic"><strong>At school:</strong></p><hr>
+			<p>Many schools (sometimes as part of a statewide effort) have programs especially designed to raise awareness of bullying behavior and to help parents and teachers deal effectively with it. Check with your local school district to see if it has such a program. </p>
+
+			<p>Schools and parents can work effectively behind the scenes to help a child meet and make new friends via study groups or science-lab partnerships.</p> 
+			<p class="subtopic"><strong>If you are concerned about your child:</strong></p>
+
+				<li>Share with the teacher what your child has told you; describe any teasing or bullying you may have witnessed.</li>
+				<li>Ask the teacher if she sees similar behavior at school, and enlist her help in finding ways to solve the problem.</li>
+				<li>If she hasn't seen any instances of teasing, ask that she keep an eye out for the behavior you described.
+				<li>If the teacher says your child is being teased, find out whether there are any things he may be doing in class to attract teasing. Ask how he responds to the teasing, and discuss helping him develop a more effective response.</li>
+				<li>After the initial conversation, be sure to make a follow-up appointment to discuss how things are going.</li>
+				<li>If the problem persists, or the teacher ignores your concerns, and your child starts to withdraw or not want to go to school, consider the possibility of "therapeutic intervention." Ask to meet with the school counselor or psychologist, or request a referral to the appropriate school professional.</li>
+
+
+		<p class="subtopic"><strong>Note:</strong>Check out the article at <a href="http://www.scholastic.com/parents/resources/article/social-emotional-skills/bullying-and-teasing-no-laughing-matter">Click Here</a>
+		</p>
+	</article>
+
+
+
+
+
+
+
+</body>
+</html>

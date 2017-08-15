@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#contry{
+    width: 60%
+}
+#title123{
+    font-size: 50px;
+    color: steelblue;
+    text-align:center;
+    font-family: arial;
+    margin:10px;
+
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 4px solid #steelblue
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: steelblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 35px
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    background-color: steelblue;
+    font-size: 20pt;
+    color: white 
+}
+
+header{
+            width: 100%;
+            height: 350px;
+        }
+        #headerpic{
+            width: 100%;
+            height: 350px;
+        }
+        #logo{
+            position: absolute;
+            margin-top: 53px;
+            margin-left: 200px;
+            width: 250px;
+            height: 250px;
+        }
+        #title{
+            color: white;
+            position: absolute;
+            margin-top: 220px;
+            margin-left: 43%;
+            font-size: 50px;
+            font-family: courier;
+            font-style: oblique;
+        }
+        .typebutton{
+            background-color: rgba(0,0,0,0);
+            color: white;
+            padding: 16px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1200px
+        }
+        .typesdropdown{
+            position: fixed;
+            display: inline-block;
+            
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: 1200px;
+            margin-top:55px;    
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .typesdropdown:hover .dropdown-content {
+            display: block;
+        }
+        .typesdropdown:hover .typebutton {
+            background-color: #3e8e41;
+        }   
+
+
+
+        .newsbutton2{
+            background-color: rgba(0,0,0,0);
+            color: white;
+            padding: 16px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1300px
+        }
+
+        .newsdropdown2{
+            position: fixed;
+            display: inline-block;
+            
+        }
+        .dropdown-content2{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: 1300px;
+            margin-top:55px;    
+        }
+        .dropdown-content2 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content2 a:hover {background-color: #f1f1f1}
+
+        .newsdropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+        .newsdropdown2:hover .newsbutton2 {
+            background-color: #3e8e41;
+        }
+
+
+
+        .storiesbutton3{
+            background-color: rgba(0,0,0,0);
+            color: white;
+            padding: 16px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1400px
+        }
+
+        .storiesdropdown3{
+            position: fixed;
+            display: inline-block;
+            
+        }
+        .dropdown-content3{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: 1400px;
+            margin-top:55px;    
+        }
+        .dropdown-content3 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content3 a:hover {background-color: #f1f1f1}
+
+        .storiesdropdown3:hover .dropdown-content3 {
+            display: block;
+        }
+        .storiesdropdown3:hover .storiesbutton3 {
+            background-color: #3e8e41;
+        }
+
+        .storiesbutton4{
+            background-color: rgba(0,0,0,0);
+            color: white;
+            padding: 16px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1510px
+        }
+
+        .storiesdropdown4{
+            position: fixed;
+            display: inline-block;
+            
+        }
+        .dropdown-content4{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: 1510px;
+            margin-top:55px;    
+        }
+        .dropdown-content4 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content4 a:hover {background-color: #f1f1f1}
+
+        .storiesdropdown4:hover .dropdown-content4 {
+            display: block;
+        }
+        .storiesdropdown4:hover .storiesbutton4 {
+            background-color: #3e8e41;
+        }
+</style>
+</head>
+<body>
+<header>
+        <div class="storiesdropdown4">
+                <button class="storiesbutton4">About</button>  
+                    <div class="dropdown-content4">
+                        <a href="aboutus.html">Who are we?</a>
+                    </div>
+        </div>      
+
+        <div class="storiesdropdown3">
+                <button class="storiesbutton3">Stories</button>  
+                    <div class="dropdown-content3">
+                        <a href="addstory.html">Add</a>
+                        <a href="read.html">Read</a>
+                    </div>      
+        </div>
+        <div class="newsdropdown2">
+                <button class="newsbutton2">News</button>  
+                    <div class="dropdown-content2">
+                        <a href="articles.html">Articles</a>
+                        <a href="trends.html">Trending</a>
+                    </div>      
+        </div>
+        <div class="typesdropdown">
+                <button class="typebutton">Types</button>  
+                    <div class="dropdown-content">
+                        <a href="cyberBullying.html">Cyber bullying</a>
+                        <a href="verbalBullying.html">Verbal bullying</a>
+                        
+                        <a href="physicalBullying.html">Physical bullying</a>
+                    </div>      
+        </div>
+
+        <h1 id="title"> Add your story </h1>
+        <a href="index.html"><img id="logo" src="logo.png"></a>
+        <img id="headerpic" src="header.jpg">
+    </header>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="korea">Korea</option>
+      <option value="china">China</option>
+      <option value="india">India</option>
+      <option value="france">France</option>
+      <option value="uk">UK</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <a href="thanks.html"><input type="button" value="Submit" id="submit"></a>
+  </form>
+</div>
+
+</body>
+</html>

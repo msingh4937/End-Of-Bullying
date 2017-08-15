@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: rgba(114, 253, 225, 0.6)
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		h2{
+			margin-left: 15%;
+			margin-right: 15%;
+			text-align: center;
+			font-size: 40pt;
+			font-family: cursive;
+		}
+
+		hr{
+			margin-left: 15%;
+			margin-right: 15%;
+			border-width: 3px;
+			border-color: purple
+		}
+		#share{
+			margin-left: 37%;
+			background-color: purple;
+			height: 55px;
+			width: 500px;
+			text-align: center;
+			font-size: 20pt;
+			color: orange
+
+
+
+		}
+		#list1{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+
+		}
+		#list2{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+			
+		}
+		#list3{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+			
+		}
+		#list4{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list5{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list6{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list7{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list8{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list9{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list10{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list11{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+
+		}
+		#list12{
+			margin-left: 15%;
+			margin-right: 15%;
+			font-size: 16pt;
+		}
+
+	#p1{
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 16pt;
+
+	}
+	#p2{
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 16pt;
+	}
+	#p3{
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 16pt;
+	}
+	#p4{
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 16pt;
+	}
+
+		
+		
+		#headerpic{
+			width: 100%;
+			height: 350px;;
+
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+
+		<h1 id="title"> End  of  Bullying </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+	</header>
+	<h2>Teens Share Stories</h2><hr>
+<ul>
+	<li id="list1"><strong>My Long Journey With Bullying In An Odyssey Article</strong></li>
+	<li id="list2">July 26, 2017</li>
+	<li id="list3"><strong>Anonymous</strong></li>
+</ul>
+	<p id="p1">I struggled with bullying for a long time. It was off and on. It started in fifth grade and continues today. I am now in college and still dealing with it has not become any easier. I wrote a little bit about it in my Odyssey article. Check it out, and share it if you can!!<a href="">https://www.theodysseyonline.com/bullying-stole-simple-joys-life.</a> 
+
+</p><hr>
+
+<ul>
+	<li id="list4"><strong>"Just because we like it"</strong></li>
+	<li id="list5">July 25, 2017</li>
+	<li id="list6"><strong>Anonymous</strong></li>
+</ul>
+	<p id="p2">It all started when these three idiots though it was funny to make fun of me for being still a pretty shy person, listening to rock or metal music and for not being good at sports (I was just never keen into sports, I was the computer-type person from a young age). The bullying started off with them calling me
+names like the "weirdo", the "strange guy", 
+	 the "evil-soul" (yeah since wearing Metallica and Slipknot t-shirts automatically turns you into a bad person who thinks only about death, seriously this is ridiculous). At first I
+	  didn't pay much attention to them, with a view that they would hopefully get bored and stop it. The good thing is that I made some new friends and we would hang out together. And this
+	   was probably the only good thing about that year. They didn't stop though. It turns out that ignoring them made them even more aggressive for some reason. They would randomly zoom
+	    out of nowhere and telling me "come on skinny freak, fight me!"" while I usually avoided fights, since I’m never the "fight and get into trouble' person. So I always said things
+	     like "got no time for you man" or "sorry I have something important to do, leave me alone". One day in particular I would go for my usual evening walk. It was Friday and I went
+	      out with my hoodie and with my headphones listening to music. And then while on my way home, these guys popped up. Apparently they were going somewhere but something tells me
+	       they were just waiting for me there. They block my way.  I understood that all they wanted was to beat me so I started running. They followed me until my home. I thought getting
+	        inside and locking the door would be a good idea. My parents were not home that moment. They would stand outside and yell insults. About me, my family and everything they could
+	         think off. I started feeling so bad about myself but at the same time enraged. "Why? They don't even know me for more than 2 months, what's the matter with these people" I
+	          kept asking myself. The whole thing hit the roof when one of them took out a BB airsoft gun and started firing at my window. I went out and yelled. "One more shot and I'm
+	           calling the cops!". They ignored so that's what I did. In less than 5 minutes sirens could be heard. Of course they run away. The next day at school all the things were
+	            strangely peaceful. They would even greet me when they first saw me. Something wasn't right. Something just didn't fit to the whole situation. And I found it out when the
+	             lesson was over. I was going to my motorbike. I got on but it wouldn't start. No matter who much I pressed the "IGNITION" button the engine seemed pretty much dead. They
+	              were standing there looking at me laughing. I knew they had done something to my motorbike. That moment one of them yelled "Hey! You're looking for this?"" and he was
+	               holding the spark plug of the engine on his hand (for those who don't know without a spark plug an engine simply wont work). I was full of both sorrow and rage at the
+	                same time. I went there and told him "Why are you doing this to me?"" he laughed, punched me in the face, then the others followed by kicking me while I was lying down.
+	                 "Just because we like it. We don't really like people and weirdos like you. OK? A weirdo, a creep, a no-lifer. No one really likes you. Oh and by the way it's fun to
+	                  see a weirdo bleeding" and they threw the spark plug down. People from different classroom were there just staring at the whole incident. I felt the biggest shame of 
+	                  my life. Some of them were laughing. My friends run off to me telling me if I was OK. The next day I talked to the headmaster about these kids. He expelled them,
+	                   called their parents and started interrogating them and questioning their actions. Of course they just stood there looking like idiots, since they had absolute no 
+	                   reason for doing such things to me. The headmasters decided they should be expelled from school for once and for all. The rest of time in this high school were fine.
+	                    I made new friends had fun and many more good memories. But the most important of all I learned the meaning of friendship, of self-esteem and the most of all. To
+	                     NEVER EVER feel bad about myself. Surely no one is awesome-looking. Surely no one is listening to the same music. Yes, no one is dressing up the same. If it was
+	                      all the same for everyone the world would be a monotonous place with no interest at all. Everyone is beautiful. We are all humans. We are all different. No one is
+	                       a weirdo. No one will be alone unless he decides to be alone. Make changes so you will like yourself more not because you want others to like you more, people!
+	                       </p><hr>
+<ul>
+	<li id="list7"><strong>Bullying for attention</strong></li>
+	<li id="list8">July 24, 2017</li>
+	<li id="list9"><strong>Anonymous</strong></li>
+</ul>
+	<p id="p3">Hi, so I've pretty much been bullied most of my school life, in primary and secondary (high school). I have this condition which is known as a lazy eye, and I was bullied
+	 for it. I would be called "pirate", "cockeyed", "wonky eyed", "one eyed". I was called these names for about two years. This is why I have social anxiety and low self esteem. The
+	  bullying in high school was the worst, I got really depressed from this. The main reason why I was called things like "cockeyed" and "transvestite" was because of my appearance. I
+	   never really saw the point in beauty and wanting to look good enough for anyone. Ive also been in fights in high school because people bullied me.</p><hr>
+
+<ul>
+	<li id="list10"><strong>Middle school sucks! (Thankfully it's over)</strong></li>
+	<li id="list11">July 24, 2017</li>
+	<li id="list12"><strong>Anonymous</strong></li>
+</ul>
+	<p id="p4">I have been bullied since fourth grade, but it didn't really bother me until middle school. My friends and I were getting bullied by two different groups of girls; girls who were popular and girls who wanted to be popular. The girls who wanted to be popular started bullying my friend and I in aftercare (6th grade). They were cutting us in line one day and we got upset and from then on they treated us rudely. They took our spot we always sat at, always were competitive with everything, laughed at us over EVERYTHING (once my sweater was inside out and they all started laughing at me), and constantly called my friend stupid (She had it worse). One day they kept asking my friend "how do I use my phone" and one girl kept giving my friend her phone. I told my friend they were laughing at her and setting her up (She some how didn't even notice??) And she threw the girl's phone on the floor. The next day we all were yelling at each other and after that they stopped messing with us. Until 7th grade, But I begged my parents to let me walk home to avoid all of that. Now to the popular girls who bullied me. It started in 6th grade and I honestly don't remember how it started. They were just always mean to my friends and I. They just always laughed at how we looked and treated us like dirt. The "main popular girl" stole my friend's lock and my friend got it back and didn't even tell the coach who stole it when the coach asked! (It was one of the most frustrating experiences I've had). One time they went through my binder and ripped out my comic page I drew. Another time the main popular girl sat next to me on a bench and said in a sarcastic tone "hey best friend" and started talking to me so I got up and walked away and it was hilarious how the girl and her friends got mad.  I said nothing because what they were didn't upset me, it was just that they were trying to make me feel bad when they are supposed to be my friends. Middle school was the worst time of my life and sometimes I wish I can go back and say something. I'm going into 10th grade by the way. High school is much better and it's probably because I went to a school in different area. I don't know if all kids are like how they were in middle but I think it may have to do with the area I am in. My brother is being treated badly and can't wait to leave middle school. Girls can be so mean to each other and it's just them being insecure and I wish my friends would realize that so they can know there is nothing wrong with them. But I am getting better and ever since I have moved to a new school I have gotten a lot better! Moving to a new school really helps and so does say something.</p><hr>
+
+	<a href="addstory.html"><button type="text" id="share">Share your Story</button></a>
+
+
+
+
+</body>
+</html>

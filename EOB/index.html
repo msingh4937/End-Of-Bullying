@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EOB</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: rgba(114, 253, 225, 0.6)
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+		#video{
+			margin-left: 5%;
+			margin-top: 2%;
+			width: 600px;
+			position: absolute;
+			
+		}
+
+		#video:hover{
+			border-bottom: solid;
+			transition: 5s;
+		}
+
+		#text{
+			width: 1000px;
+			display: inline-block;
+			margin-left: 43%;
+			margin-top: 3.5%;
+			font-size: 25px;
+			font-family: cursive;
+			position: absolute;
+
+		}
+		#picdiv{
+			margin-top: 27%;
+			margin-left: 45%;
+		}
+		#pie{
+			width: 900px;
+			height: 460px;
+			position: absolute;
+		}
+		
+		#banana{
+			width: 700px;
+			height: 400px;
+			display: inline-block;
+			margin-left: 5%;
+			text-align: center;
+			font-size: 25px;
+			font-family: cursive;
+			position: absolute;
+		}
+
+		footer{
+			width: 100%;
+			position: absolute;
+
+		}
+		#footerpic{
+			width: 100%;
+			margin: 0;
+			position: absolute;
+
+
+		}
+		#gmail{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 16%
+		}
+
+		#footertext{
+			position: absolute;
+			color: white;
+			font-size: 60px;
+			margin-left: 40%;
+			font-family: courier;
+		}
+		#snapchat{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 26%
+		}
+		#instagram{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 36%
+		}
+		#youtube{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			margin-top: 7.4%;
+			margin-left: 46%
+		}
+		#facebook{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 56%
+		}
+		#twitter{
+			position: absolute;
+			width: 103px;
+			height: 103px;
+			margin-top: 7.4%;
+			margin-left: 66%
+		}
+		#googleplus{
+			position: absolute;
+			width: 97px;
+			height: 97px;
+			margin-top: 7.4%;
+			margin-left: 76%
+		}
+
+		#gmail:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#snapchat:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#instagram:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#youtube:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#facebook:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#twitter:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		#googleplus:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+
+
+
+		#slogan{
+			color: red;
+			font-size: 25px;
+			text-align: center;
+			width: 100%;
+			margin-top: 54%
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+
+		<h1 id="title"> End  of  Bullying </h1>
+		<img id="logo" src="logo.png">
+		<img id="headerpic" src="header.jpg">
+	</header>
+	<div id="video">
+		<video width="600" height="400" controls>
+		<source src="bullyingvid.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div id="text">
+		<p> Bullying is the use of force, threat, or coercion to abuse, 
+		intimidate, or aggressively dominate others. The behavior is often
+		 repeated and habitual. One essential prerequisite is the perception, 
+		 by the bully or by others, of an imbalance of social or physical 
+		 power, which distinguishes bullying from conflict. Behaviors used to
+		  assert such domination can include verbal harassment or threat
+		, physical assault or coercion, and such acts may be directed 
+		repeatedly towards particular targets. Rationalizations of such
+		 behavior sometimes include differences of social class, race,
+		  religion, gender, sexual orientation, appearance, behavior, body
+		   language, personality, reputation, lineage, strength, size, or
+		    ability. If bullying is done by a group, it is called mobbing.</p>
+	</div>
+
+	<div id="picdiv">
+		<img id="pie" src="pie.png">
+	</div>
+
+	<div id="banana">
+		Bullying can be defined in many different ways. The United Kingdom of Great Britain and Northern Ireland has no legal definition of bullying, while some states in the United States have laws against it. Bullying is divided into four basic types of abuse – emotional (sometimes called relational), verbal, physical, and cyber. It typically involves subtle methods of coercion, such as intimidation.Bullying ranges from one-on-one, individual bullying through to group bullying called mobbing, in which the bully may have one or more "lieutenants" who may seem to be willing to assist the primary bully in his or her bullying activities. Bullying in school and the workplace is also referred to as peer abuse.
+	</div>
+
+
+	<div id="slogan">
+
+		<h1>1 MILLION BULLIES, 3 MILLION VICTIMS, ONE VOICE TO STOP IT ALL!!!</h1>
+		
+
+	</div>
+
+	<footer>
+		<img src="footer.jpg" id="footerpic">
+		<h2 id="footertext"> Contact us...</h2>
+		<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ypatel9559@baysidehighschool.org&tf=1"><img src="gmail.png" id="gmail"></a>
+		<a href="C:\Users\r\Desktop\EOB\snapcode.svg"><img src="snapchat.png" id="snapchat"></a>
+		<img src="instagram.png" id="instagram">
+		<img src="youtube.png" id="youtube">
+		<img src="facebook.png" id="facebook">
+		<img src="twitter.png" id="twitter">
+		<img src="googleplus.png" id="googleplus">
+
+	</footer>
+
+</body>
+</html>

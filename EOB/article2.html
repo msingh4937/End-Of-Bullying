@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EOB</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+
+		article{
+			flex-wrap:wrap;
+			font-size:25px;
+			color:white;
+			background:url("header.jpg") 100% fixed;
+			background-repeat:no-repeat;
+			background-size:cover;
+
+		}
+			h1{
+			margin-left: 3%;
+			color: steelblue
+		}
+		li{
+			margin-left: 3%;
+			color: pink
+		}
+		p{
+			margin-left: 3%;
+			color: pink
+		}
+		hr{
+			border-width: 5px;
+			border-color: lime;
+
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+		<h1 id="title"> NoBullying.com Article </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+	</header>
+	<article>
+		<h1>Articles From NoBullying</h1>
+		
+		<h1><strong>Finding Help</strong></h1><hr>
+
+			<p>Where can they turn for help? There are many organizations and individuals that can provide guidance-including the school counselors, teachers, and professional therapists. But if a parent simply wants information, or wants to read up on bullying articles to share with their kids so they can explain what bullying is and what they can do about it, there are plenty of resources: books, articles, and websites that can provide tons of tips, statistics, and recommendations about how to recognize and handle a bullying situation.</p>
+
+			<p>There are so many bullying scenarios that it can be hard for a parent to recognize when it's happening. From schoolyard intimidation to violence to name calling to sexual harassment to cyber bullying, parents and kids need to be able to distinguish normal teasing from actual bullying. Whether your child is a victim of a bully, or whether you suspect your child is the bully, or whether you just want to keep informed on the topic, arming yourself with knowledge is a great tactic for all parents. Below is just a sample of some of the resources out there that can help parents learn more about bullying and how to deal with it.</p>
+
+		<h1><strong>Bullying Articles for Kids: Victims of Bullies</strong></h1><hr>
+
+			<p>The key to helping kids deal with difficult topics is not to overwhelm them with the frightening, negative statistics and stories, but to instead focus on the hope. Share success stories that empower victims, and that show how other kids have overcome difficult situations like theirs. One such powerful story is by a teenage bully advocate, Brigitte Berman, who wrote a book called Dorie Witt's Guide to Surviving Bullies. She wrote it as a seventeen year old who dealt with her own personal bullying issues as a junior high school student. The fact that it's written by a peer makes Brigitte's story that much more powerful.</p>
+
+			<p>Kids Health has some excellent articles geared directly to kids. It addresses them in simple terms, explaining what bullying is and why bullies act the way they do. There are a number of specific stories of other kids who have faced bullying situations and how they overcame them.
+
+			Another valuable resource is the Education Development Center (EDC) website, which has a number of helpful articles from school violence to sibling bullying.</p>
+
+			<h1><strong>Bullying Articles for Kids, Especially Bullies.</strong></h1><hr>
+
+			<p>An article on bullying focused towards bullies takes a different approach than an article on bullying focused on victims of bullies. While articles geared towards victims talks about how to face a threatening situation and confront someone else's aggressive behavior, and how to ask for help, bullying articles for kids who are actually bullies tend to focus on the root causes of the bullying behavior, and how to recognize it in themselves.
+
+			ThinkB4YouSpeak.com focus is primarily on verbal abuse, and it has videos and PSAs on how words can hurt. It is currently running a campaign called "It's not OK to say 'that's so gay'."" It helps young people recognize that words are hurtful, and the impact that carelessly tossed off insults can have.
+
+			Another source of information for parents of bullies is BullyingStatistics.org. It has articles on a variety of bullying issues. The article helps a parent recognize potential signs of bullying. Some patterns of behaviour of a bully include:<p>
+
+			<li>Lack of empathy </li>
+			<li>Aggressiveness</li>
+			<li>Uses violence as a solution to problems</li>
+			<li>Quickly rushes to anger </li>
+			<li>Frustrates easily</li>
+			
+
+
+		<h1><strong>What Defines Bullying Article for Kids?</strong></h1><hr>
+			<p>There are no easy answers but talking about the subject starts the work of finding helpful articles on bullying. People do not always talk to their children. With more parents working day in and day out finding out everything is not possible. Kids hold many things in. Classroom diaries might even help. Writing anonymously about bullies and letting this information be given to parties that have nothing to do with the school the kids are in may lead to less problems with bullies. Kids read one another’s handwriting and can often notice who wrote what but if the information is sent outside of the area, many problems might be solved. These young people hurt themselves out of fear. The world has to find a way to take away the fear.</p>
+
+			<p>Some bullying articles for kids provide safety tips. This is crucial when trying to prevent bullying. Making sure that neither bully nor those who are being bullied feel their own safety is threatened is of great importance. There are many articles on bullying that show results, precautions, and ways of dealing with bullying. There are articles on bullying that discuss issues about bullying and how to get those being bullied to admit that someone is bullying them. This is a major help when trying to put bullying to an end.</p>
+		 
+		<h1><strong>Articles about Bullying</strong></h1><hr>
+
+			<p>Articles about bullying fill the minds of people who have faced the problem of bullying and of those who have witnessed mentally challenged people who are teased and taunted daily. LGBT youngsters are called names, bullied because they are not what the world believes they should be. There are many colorful people in the world and some are bothered because of a refusal to conform to the attitudes of the masses.</p>
+
+			<p>There are numerous articles about bullying getting to critical points. Some victims start causing physical damage to themselves or bullies do this task for them. This is very bad for victims and bullies because some get hurt. Articles are trying to end this tragedy by describing ways to stop it.</p>
+			
+		<p><strong>Note:</strong>Check out the article at <a href="https://nobullying.com/bullying-articles-for-kids/">Click Here</a>
+		</p>
+	</article>
+
+
+
+
+
+
+
+</body>
+</html>

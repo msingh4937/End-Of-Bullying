@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EOB</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}	
+		header{
+			width: 100%;
+			height: 350px;
+		}
+		#headerpic{
+			width: 100%;
+			height: 350px;
+		}
+		#logo{
+			position: absolute;
+			margin-top: 53px;
+			margin-left: 200px;
+			width: 250px;
+			height: 250px;
+		}
+		#title{
+			color: white;
+			position: absolute;
+			margin-top: 220px;
+			margin-left: 43%;
+			font-size: 50px;
+			font-family: courier;
+			font-style: oblique;
+		}
+		.typebutton{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1200px
+		}
+		.typesdropdown{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1200px;
+    		margin-top:55px;	
+		}
+		.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.typesdropdown:hover .dropdown-content {
+    		display: block;
+		}
+		.typesdropdown:hover .typebutton {
+    		background-color: #3e8e41;
+		}	
+
+
+
+		.newsbutton2{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1300px
+		}
+
+		.newsdropdown2{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content2{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1300px;
+    		margin-top:55px;	
+		}
+		.dropdown-content2 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+		.newsdropdown2:hover .dropdown-content2 {
+    		display: block;
+		}
+		.newsdropdown2:hover .newsbutton2 {
+    		background-color: #3e8e41;
+		}
+
+
+
+		.storiesbutton3{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1400px
+		}
+
+		.storiesdropdown3{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content3{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1400px;
+    		margin-top:55px;	
+		}
+		.dropdown-content3 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown3:hover .dropdown-content3 {
+    		display: block;
+		}
+		.storiesdropdown3:hover .storiesbutton3 {
+    		background-color: #3e8e41;
+		}
+		.storiesbutton4{
+			background-color: rgba(0,0,0,0);
+			color: white;
+			padding: 16px;
+			font-size: 26px;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			margin-left: 1510px
+		}
+
+		.storiesdropdown4{
+			position: fixed;
+			display: inline-block;
+			
+		}
+		.dropdown-content4{
+			display: none;
+    		position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    		z-index: 1;
+    		margin-left: 1510px;
+    		margin-top:55px;	
+		}
+		.dropdown-content4 a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    	}
+    	.dropdown-content4 a:hover {background-color: #f1f1f1}
+
+		.storiesdropdown4:hover .dropdown-content4 {
+    		display: block;
+		}
+		.storiesdropdown4:hover .storiesbutton4 {
+    		background-color: #3e8e41;
+		}
+		article{
+			flex-wrap:wrap;
+			font-size:25px;
+			color:white;
+			background:url("header.jpg") 100% fixed;
+			background-repeat:no-repeat;
+			background-size:cover;
+
+		}
+
+		#subtopic{
+			color: rgba(119,249,236,1);
+			font-size: 35pt
+		}
+
+
+		h1{
+		margin-left: 3%;
+		}
+		li{
+			margin-left: 3%;
+			color: pink
+		}
+		p{
+			margin-left: 3%;
+			color: pink
+		}
+		hr{
+			border-width: 5px;
+			border-color: lime;}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="storiesdropdown4">
+				<button class="storiesbutton4">About</button>  
+					<div class="dropdown-content4">
+						<a href="aboutus.html">Who are we?</a>
+					</div>
+		</div>		
+
+		<div class="storiesdropdown3">
+				<button class="storiesbutton3">Stories</button>  
+					<div class="dropdown-content3">
+						<a href="addstory.html">Add</a>
+						<a href="read.html">Read</a>
+					</div>		
+		</div>
+		<div class="newsdropdown2">
+				<button class="newsbutton2">News</button>  
+					<div class="dropdown-content2">
+						<a href="articles.html">Articles</a>
+						<a href="trends.html">Trending</a>
+					</div>		
+		</div>
+		<div class="typesdropdown">
+				<button class="typebutton">Types</button>  
+					<div class="dropdown-content">
+						<a href="cyberBullying.html">Cyber bullying</a>
+						<a href="verbalBullying.html">Verbal bullying</a>
+						
+						<a href="physicalBullying.html">Physical bullying</a>
+					</div>		
+		</div>
+		<h1 id="title"> CNN Article </h1>
+		<a href="index.html"><img id="logo" src="logo.png"></a>
+		<img id="headerpic" src="header.jpg">
+	</header>
+	<article>
+		<h1></h1>
+		
+		<p id="subtopic"><strong>One instance...</strong></p><hr>
+
+			<p>(CNN)The tragic death of 18-year-old Brandy Vela is bringing the potential dangers of cyberbullying back into focus. It's another reminder of what experts say is a public health problem facing young people.</p>
+
+			<p>The Texas City, Texas, teen put a gun to her chest and killed herself in front of her family after being relentlessly bullied, her family said. Brandy's sister, Jackie, said the teen had always been bullied for her weight, and cyberbullying ramped up in April. People called her fat and ugly and sent her messages saying, "Why are you still here?" Because the suspects used an app that wasn't traceable, the police weren't able to do anything about it, her family was told.</p>
+
+			<p>Sheriff's deputies plan to address cyberbullying when they speak with students in the Texas City Independent School District , where Vela went to school.</p>
+
+			<p>"Today's young adults and teenagers have grown up with technology and they have access to it 24/7. Many times they become very bold over technology and text things they would never say directly to someone's face," said Melissa Tortorici, the communications director for the school district. "It's extremely difficult to stop someone from sending messages when apps make it easy to remain anonymous."</p>
+
+			<p>As technology has become more ingrained at increasingly younger ages for children, cyberbullying has become a serious issue that teachers and parents are trying to combat. Melania Trump, the next first lady of the United States, has said that ending cyberbullying will be her focus because social media culture has become "too mean and too tough," especially in regard to children and teens.</p>
+
+			<p>In May, a report from the National Academies of Sciences, Engineering and Medicine declared that it's time to recognize bullying as a serious public health issue. But zero-tolerance policies aren't going to cut it.</p>
+
+			<p>"We need to understand that this is a public health problem faced by a third of our children," said Dr. Frederick Rivara, chairman of the committee compiling the report. "It has a major effect on their academic performance as well as their mental and physical health."</p>
+
+
+			<p id="subtopic"><strong>The effects of bullying</strong></p><hr>
+
+			<p>In addition to causing depression and anxiety and leading to alcohol and drug abuse into adulthood, the harmful effects of bullying manifest themselves physically in kids and teens by disrupting their sleep, causing gastrointestinal issues and headaches.<p>
+
+			<p>Researchers also noticed that bullying causes changes in the stress response system of the brain, affecting cognitive function and self-regulating emotions. Children who are bullied as well as those who bully others are more likely to contemplate or attempt suicide.</p>
+			<p>Bullies themselves are negatively impacted by their own behavior. They are more likely to be depressed, are at great risk for poor psychological and social outcomes and are more likely to engage in high-risk activities such as vandalism and theft.</p>
+
+			<p>Determining the scope of bullying hasn't always been easy due to differences in how it's defined or measured, but the committee looked at research suggesting that anywhere between 18% and 31% of kids are affected by bullying. Cyberbullying affected between 7% and 15% of kids, and it's on the rise.</p>
+
+			<p>There are also vulnerable subgroups at a higher risk for bullying, including kids who are obese or disabled, who identify as LGBT or who have fewer peers of the same ethnicity within their school.</p>
+
+		<p id="subtopic"><strong>What is bullying?</strong></p><hr>
+			<p>For the sake of having a consistent definition of what bullying means, the committee referred to the Center for Disease Control and Prevention's current definition: Bullying is any unwanted aggressive behavior(s) by another youth or group of youths who are not siblings or current dating partners that involves an observed perceived power imbalance and is repeated multiple times or is highly likely to be repeated, and bullying may inflict harm or distress on the targeted youth including physical, psychological, social or educational harm.</p>
+
+			<p>The report also focused on ages 5 to 18 years, in line with the CDC, because it's just as important to address bullying in early childhood as well as emerging adulthood.</p>
+
+			<p>Because cyberbullying is carried about by some of the same individuals and directed at the same targets, it is included within the broader definition rather than standing on its own. But Rivara acknowledged that more research needs to be done in order to understand cyberbullying and the most effective ways to combat it.</p>
+
+			<p>Even if cyberbullying isn't repetetive, which bullying often is by definition, it is still harmful because "a single perpetrating act on the Internet can be shared or viewed multiple times," according to the report.</p>
+
+		
+			<p id="subtopic"><strong>How to prevent it</strong></p><hr>
+
+			<p>Given the proven short- and long-term "psychological consequences" for both the bullied and bullies themselves, the report committee determined which type of evidence-based programs can help to prevent it in the future. The report also includes suggested guidelines and policies for the future.</p>
+
+			<p>The recommendations include arriving at a consistent and comprehensive definition for bullying, more longitudinal studies about its prevalence, evaluating antibullying policies, developing and implementing evidence-based programs, and training and partnering with social media companies on policies to identify and respond to cyberbullying.</p>
+
+			<p>And it's time to shift away from zero-tolerance policies in schools and switch to Positive Behavioral Interventions and Supports or PBIS, which have a proven track record in more than 20,000 schools, according to committee member Catherine Bradshaw, a developmental psychologist and youth violence prevention researcher.</p>
+
+			<p>"Zero-tolerance policies were developed to address a variety of behaviors around bullying, but they don't work and may actually be harmful," Rivara said. "Under zero tolerance, bullies would be expelled or suspended. This decreases their chances of getting better or completing school and ultimately getting a job. They need help. With different programs, we can end the behavior but help them at the same time."</p>
+
+			<p>The PBIS programs have reduced rates of bullying, improved discipline and academic performance and created a better and healthier climate in the schools utilizing them, Bradshaw said. The programs focus on social emotional learning, which helps kids and teens to learn how to regulate their emotions, build empathy and identify the difference between teasing and bullying.</p>
+
+			<p>his can be used in conjunction with more intensive programs that are aimed at kids who are already involved in bullying, as a target or a perpetrator.</p>
+
+			<p>"Children need to be taught these skills like they would math and science," Bradshaw said.</p>
+
+			<p>But Bradshaw also said there is more room for utilizing innovation and technology to better identify and prevent bullying.</p>
+
+			<p>"We see a disconnect between the rates of bullying mentioned by kids and what adults are seeing and hearing," she said.</p>
+
+			<p>For that reason, the committee is calling for more data collection on bullying, like increased surveys among students, even if they are anonymous. Then, teachers can have a better idea of where the bullying is occurring and what type of bullying it is, and they can increase supervision. More research also needs to be done around bullies themselves, as well as bystanders.</p>
+
+			<p>As part of the training recommended by the committee, Bradshaw believes that more professional development models on bullying intervention could benefit from emerging technology. Role play through video games could seem more real and convincing to kids and adults working through scenarios as the bully, target or bystander, for example.</p>
+
+			<p><strong id="subtopic">Preventing bullying outside school</strong></p><hr>
+
+			<p>Policies and programs need to transcend schools and reach the state level and federal agencies, the committee advised. All 50 states have adopted or revised laws to address bullying over the past 15 years, and almost all include cyberbullying. But the report encouraged state attorneys general to continually work with researchers on the best and most updated guidance for amending laws or creating new ones in anti-bullying campaigns.</p>
+
+			<p>Families were also a focus of the report.</p>
+
+			<p>Start the conversation at home before bullying occurs, Bradshaw said. Parents and families can provide critical emotional support, which helps kids open up about bullying that they are experiencing or witnessing. Family members can also help them cope and figure out how to handle and diffuse any situation that might arise, according to the report.</p>
+
+			<p>StopBullying.gov is a one-stop shop for kids, parents and teachers to learn the signs and symptoms of bullying, as well as strategies for </p>
+
+			<p>What people learn about bullying early on can make a difference later.</p>
+
+			<p>"The important skills we're teaching kids now, when they're in school, are the same skills they need for life," Rivara said.</p>
+
+
+			
+			
+		<p><strong>Note:</strong>Check out the article at <a href="http://www.cnn.com/2016/05/10/health/bullying-public-health-zero-tolerance/index.html">Click Here</a>
+		</p>
+	</article>
+
+
+
+
+
+
+
+</body>
+</html>
